@@ -1,2 +1,7 @@
 @import 'accueil.css';
 @import 'discographie.css';
+
+:root {
+    --bg: red
+}
+
