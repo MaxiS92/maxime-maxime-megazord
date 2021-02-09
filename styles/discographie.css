@@ -1,6 +1,25 @@
-hero {
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: red;
+}
+header{
+    
+    object-fit: cover;
+}
+picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.container{
+height: 100%;
 
-width: 10%;
-height: 10%;
+}
+
+.row{
+
+height: 100%;
 
 }
