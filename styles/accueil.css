@@ -4,5 +4,10 @@ body {
 img {
     width: 100%;
     height: 100%;
+}
+header {
     object-fit: cover;
+}
+picture {
+    position: absolute;
 }
