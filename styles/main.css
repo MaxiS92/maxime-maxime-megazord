@@ -2,6 +2,13 @@
 @import 'discographie.css';
 
 :root {
-    --bg: red
+    --title:;
+    --regular:;
+    --bg: black;
+    --text:;
+    --primary:;
+    --primary-alt:;
+    --secondary:;
+    --secondary-alt:;
 }
 
