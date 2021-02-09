@@ -1,6 +1,16 @@
 @import 'accueil.css';
 @import 'discographie.css';
 
+@font-face {
+    font-family: "ZeF RAVE";
+    src: url(ZeF RAVE.otf);
+  }
+
+  @font-face {
+    font-family: "Lemon/Milk";
+    src: url(LemonMilk.otf);
+  }
+
 :root {
     --title:;
     --regular:;
