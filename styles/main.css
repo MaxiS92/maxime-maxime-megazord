@@ -1,24 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+@font-face {
+  font-family: "ZeF RAVE";
+  src: url('ZeF RAVE.otf');
+}
+
+@import 'variables.css';
 @import 'accueil.css';
 @import 'discographie.css';
 
-@font-face {
-    font-family: "ZeF RAVE";
-    src: url(ZeF RAVE.otf);
-  }
-
-  @font-face {
-    font-family: "Lemon/Milk";
-    src: url(LemonMilk.otf);
-  }
-
-:root {
-    --title:;
-    --regular:;
-    --bg: black;
-    --text:;
-    --primary:;
-    --primary-alt:;
-    --secondary:;
-    --secondary-alt:;
+h1{
+  font-size: 80px; 
 }
-
+h2{
+  font-size: 60px; 
+}
+h3{
+  font-size: 45px; 
+}
+p{
+  font-size: 30px;
+}
