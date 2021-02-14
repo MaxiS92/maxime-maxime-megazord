@@ -3,7 +3,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    background-color: red;
+    background-color: black;
 }
 header{
     
@@ -15,13 +15,13 @@ picture {
     position: absolute;
 }
 .container{
-position: relative;
+position: absolute;
 height: 100%;
 
 }
 
 .row{
-position: relative;
+position: absolute;
 height: 100%;
 
 }
@@ -29,10 +29,50 @@ height: 100%;
 width: 100%;
 height: 100%;
 position: absolute;
-background-image: linear-gradient(transparent, rgba(0, 0, 125, 0.575) ); 
+background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) ); 
 
 }
 h1{
-color: black;
-
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    text-align: center; 
+    font-family: "ZeF RAVE";
+    font-size: 100px;
+    color: #c90000;
 }
+
+
+p{
+    position: relative;
+    width: 100%;
+    height: 100%;  
+    text-align: center; 
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+button{
+    position: relative;
+    background-color: #c90000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+   
+  }
+  button:hover{
+    position: relative;
+    background-color: #c24f4f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    transition-duration: 0.4s;
+  }
