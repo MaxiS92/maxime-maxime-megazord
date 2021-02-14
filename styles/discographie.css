@@ -55,24 +55,20 @@ p{
 button{
     position: relative;
     background-color: #c90000;
-    border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    font-size: 30px;
+    font-size: 2.2vw;
     font-family: 'Oswald', sans-serif;
    
   }
   button:hover{
     position: relative;
     background-color: #c24f4f;
-    border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    font-size: 28px;
+    font-size: 2.1vw;
     font-family: 'Oswald', sans-serif;
     transition-duration: 0.4s;
   }
