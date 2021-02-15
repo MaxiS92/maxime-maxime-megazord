@@ -1,26 +1,26 @@
 
-img {
+.imgA {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-header {
+.headerA {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-picture {
+.pictureA {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.container {
+.containerA {
     height: 100%;
 }
 .row {
     height: 100%;
 }
-.contraste {
+.contrasteA {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,7 +45,7 @@ p{
     font-size: 2.2vw;
     color: white;
 }
-button{
+.buttonA{
     position: relative;
     background-color: #c90000;
     border: none;
@@ -59,7 +59,7 @@ button{
     left: 50%;
    
   }
-  button:hover{
+  .buttonA:hover{
     background-color: #c24f4f;
     font-size: 2.1vw;
     transition-duration: 0.4s;

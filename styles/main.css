@@ -5,9 +5,9 @@
   src: url('ZeF RAVE.otf');
 }
 
-@import 'variables.css';
-@import 'accueil.css';
-@import 'discographie.css';
+@import url('variables.css');
+@import url('accueil.css');
+@import url('discographie.css');
 
 h1{
   font-size: 6vw; 
