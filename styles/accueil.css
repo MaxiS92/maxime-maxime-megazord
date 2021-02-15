@@ -1,9 +1,20 @@
 
+body{
+  background-color: black
+}
 .imgA {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+@media screen and (orientation: landscape) {
+  .headerA{
+      position: relative;
+      margin: 0 auto;
+      width:100%;
+      height: 56.25vw;
+  }
+} 
 .pictureA {
     position: absolute;
     width: 100%;
@@ -12,6 +23,11 @@
 .container-fluid {
     position: absolute;
     height: 100%;
+}
+.headerA{
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 .row {
     height: 100%;
@@ -62,6 +78,10 @@
     transition-duration: 0.4s;
   }
 
+  .section-cartes{
+    width: 100%;
+  }
+
   .h1-cartes{
     position: relative;
     font-family: "ZeF RAVE";
@@ -70,8 +90,8 @@
   }
 
   .card{
-    padding-top: 10px;
     position: relative;
+    margin-top: 10px;
   }
   .card-img-top{
       width:100%;
