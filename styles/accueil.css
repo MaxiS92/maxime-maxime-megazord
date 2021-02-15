@@ -4,9 +4,6 @@
     height: 100%;
     object-fit: cover;
 }
-.headerA {
-    object-fit: cover;
-}
 .pictureA {
     position: absolute;
     width: 100%;
@@ -65,9 +62,16 @@
     transition-duration: 0.4s;
   }
 
+  .h1-cartes{
+    position: relative;
+    font-family: "ZeF RAVE";
+    font-size: 6vw;
+    color: #c90000;
+  }
+
   .card{
     padding-top: 10px;
-    position: absolute;
+    position: relative;
   }
   .card-img-top{
       width:100%;
@@ -79,11 +83,27 @@
   }
   .role{
     font-family: 'Oswald', sans-serif, bold;
-    font-size: 2.2vw;
+    font-size: 3vw;
     color: black;
   }
   .card-body{
     font-family: 'Oswald', sans-serif;
     font-size: 2.2vw;
     color: black;
+  }
+  .button-cartes{
+    position: relative;
+    width: 100%;
+    background-color: #c90000;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 2.2vw;
+    font-family: 'Oswald', sans-serif;
+  }
+  .button-cartes:hover{
+    background-color: #c24f4f;
+    font-size: 2.1vw;
+    transition-duration: 0.4s;
   }
