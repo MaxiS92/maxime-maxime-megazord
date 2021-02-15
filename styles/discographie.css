@@ -1,0 +1,74 @@
+
+.disco-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: black;
+}
+.disco-header{
+    
+    object-fit: cover;
+}
+.disco-picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.container{
+position: absolute;
+height: 100%;
+
+}
+.row{
+position: absolute;
+height: 100%;
+}
+.disco-contraste{
+width: 100%;
+height: 100%;
+position: absolute;
+background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) ); 
+
+}
+.disco-h1{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    text-align: left; 
+    font-family: "ZeF RAVE";
+    font-size: 6vw;
+    color: #c90000;
+}
+
+
+.disco-p{
+    position: relative;
+    width: 100%;
+    height: 100%;  
+    text-align: left; 
+    font-family: 'Oswald', sans-serif;
+    font-size:2.2vw;
+    color: white;
+}
+.disco-button{
+    position: relative;
+    background-color: #c90000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 2.2vw;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    text-decoration: none;
+   
+  }
+  .disco-button:hover{
+    position: relative;
+    background-color: #c24f4f;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 2.1vw;
+    font-family: 'Oswald', sans-serif;
+    transition-duration: 0.4s;
+  }
