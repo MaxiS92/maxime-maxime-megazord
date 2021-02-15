@@ -5,9 +5,7 @@
     object-fit: cover;
 }
 .headerA {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    object-fit: cover;
 }
 .pictureA {
     position: absolute;
@@ -15,10 +13,12 @@
     height: 100%;
 }
 .container-fluid {
+    position: absolute;
     height: 100%;
 }
 .row {
     height: 100%;
+    width: 100%;
 }
 .contrasteA {
     position: absolute;
