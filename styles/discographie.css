@@ -19,11 +19,9 @@ position: absolute;
 height: 100%;
 
 }
-
 .row{
 position: absolute;
 height: 100%;
-
 }
 .disco-contraste{
 width: 100%;
@@ -32,7 +30,7 @@ position: absolute;
 background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) ); 
 
 }
-h1{
+.disco-h1{
     position: relative;
     width: 100%;
     height: 100%; 
@@ -43,7 +41,7 @@ h1{
 }
 
 
-p{
+.disco-p{
     position: relative;
     width: 100%;
     height: 100%;  
