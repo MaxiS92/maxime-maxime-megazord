@@ -16,22 +16,23 @@
     height: 100%;
     position: absolute;
 }
-.container{
+.container-disco{
 position: relative;
 height: 100%;
-
 }
+
 .row{
 position: relative;
 height: 100%;
 }
+
 .disco-contraste{
 width: 100%;
 height: 100%;
 position: absolute;
 background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) ); 
-
 }
+
 .disco-h1{
     position: relative;
     width: 100%;
@@ -41,7 +42,6 @@ background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) );
     font-size: 6vw;
     color: #c90000;
 }
-
 
 .disco-p{
     position: relative;
@@ -75,32 +75,26 @@ background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) );
     transition-duration: 0.4s;
   }
   .disco-section{
-  
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: black;
-    
   }
-  ol{
-      
+
+  ol{    
       position: relative;
     font-family: "ZeF RAVE";
     font-size: 8vw;
-    color: #c90000;
-  
-   
+    color: #c90000;  
   }
+
   li{
  position: relative;
     font-family: 'Oswald', sans-serif;
     color: white;
     font-size: 2.5vh;
    margin-left:20px ;
-    
-    
-
-
   }
+
   a { color: inherit; 
 } 
   
@@ -124,11 +118,8 @@ background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) );
   border: none;
   text-decoration: none;
   margin-left:20px ;
-  
- 
- 
-
 }
+
 .disco-button2:hover{
   position: relative;
   background-color: #c24f4f;
@@ -174,7 +165,5 @@ background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) );
   .photo{
       
       margin-top: 0px;
-    
-
   }
 }

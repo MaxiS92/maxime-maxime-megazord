@@ -20,18 +20,14 @@ body{
     width: 100%;
     height: 100%;
 }
-.container-fluid {
-    position: absolute;
+.container-title {
+    position: relative;
     height: 100%;
 }
 .headerA{
     position: relative;
     width: 100%;
     height: 100vh;
-}
-.row {
-    height: 100%;
-    width: 100%;
 }
 .contrasteA {
     position: absolute;
@@ -80,7 +76,6 @@ body{
 
   .section-cartes{
     width: 100%;
-    height: 175vw;
   }
 
   .h1-cartes{
@@ -93,6 +88,7 @@ body{
   .card{
     position: relative;
     margin-top: 10px;
+    border: none;
   }
   .card-img-top{
       width:100%;
