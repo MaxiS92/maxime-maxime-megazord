@@ -169,7 +169,18 @@ body{
   .carousel-accueil-img{
     width: 100%;
     position: relative;
+    object-fit: fill;
   }
   .swiper-slide {
     text-align: center;
+  }
+  .swiper-pagination-bullet{
+    width: 2%;
+    opacity: 0.4;
+    background-color: rgb(172, 172, 172);
+  }
+  .swiper-pagination-bullet-active{
+    width: 2%;
+    opacity: 1;
+    background-color: #c90000;
   }
