@@ -14,10 +14,13 @@ const sectionList = document.querySelectorAll(".section-accueil");
   const card = section.querySelectorAll(".card");
                     
   gsap.timeline({
-    scrollTrigger: section,
+    scrollTrigger: {
+    trigger: section,
     markers: true,
-    toggleActions: 'restart complete reverse',
+    toggleActions: 'restart complete reverse reset',
+    }
   })
+  
   .from(title, {
     opacity: 0,
     scale: '2',
