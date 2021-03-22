@@ -15,29 +15,29 @@ const sectionList = document.querySelectorAll(".section-accueil");
                     
   gsap.timeline({
     scrollTrigger: {
-    trigger: section,
     markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
     toggleActions: 'restart complete reverse reset',
-    }
+    trigger: section,
+    },
   })
-  
+
   .from(title, {
     opacity: 0,
     scale: '2',
   })
-  .from(card, {
-    y: '100px',
-    duration: 1,
-    opacity: 0,
-  })
   .from(swiper, {
-    x: '-200px',
-    duration: 0.5,
+    y: '-100px',
     opacity: 0,
   })
   .from(video, {
-    x: '200px',
-    duration: 0.5,
+    y: '100px',
+    opacity: 0,
+  })
+  .from(card, {
+    y: '100px',
+    duration: 1,
     opacity: 0,
   })
 })
