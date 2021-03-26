@@ -76,10 +76,10 @@ body{
     transition-duration: 0.4s;
   }
 
-  .section-cartes{
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  .section-accueil{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
   }
 
   .h1-cartes{
@@ -132,18 +132,6 @@ body{
     position: relative;
     width: 100%;
   }
-  .video-accueil{
-    padding: 20px;
-  }
-  .video-title-accueil{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    font-family: "ZeF RAVE";
-    font-size: 6vw;
-    color: #c90000;
-    margin-bottom: 10px;
-  }
   iframe{
     position: absolute;
     top:0;
@@ -157,14 +145,7 @@ body{
     height: 0;
     padding-bottom: 56.25%;
     text-align: center;
-  }
-  .carousel-accueil{
-    padding: 20px;
-  }
-  .carousel-accueil-titre{
-    font-family: "ZeF RAVE";
-    font-size: 5vw;
-    color: #c90000;
+    object-fit: fill;
   }
   .carousel-accueil-img{
     width: 100%;
