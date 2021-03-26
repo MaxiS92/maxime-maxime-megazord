@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper-container', {
 
   gsap.registerPlugin(ScrollTrigger);
 
-const sectionList = document.querySelectorAll(".ScrollTrigger, .disco-section");
+const sectionList = document.querySelectorAll(".ScrollTrigger, .disco-section");s
   sectionList.forEach((section) => { 
   const photo= section.querySelector(".photo");
   const ol = section.querySelector(".ol");
