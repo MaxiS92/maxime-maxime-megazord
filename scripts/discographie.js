@@ -6,3 +6,14 @@ const swiper = new Swiper('.swiper-container', {
           
         }
   })
+
+  import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+
+
+
