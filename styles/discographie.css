@@ -133,7 +133,9 @@ z-index: 2;
 
 .animation-disco{
   position: relative;
-  width: 100%;
+  width: 400px;
+ height: 400px;
+ padding: 40px;
 }
 
 iframe{
