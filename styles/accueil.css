@@ -129,9 +129,29 @@ body{
     transition-duration: 0.4s;
   }
   .animation-accueil{
-    position: relative;
     width: 100%;
+    position: sticky;
+    top: 50%;
+    height: 0;
+    padding-bottom: 100%;
+    background-image: url('https://imgur.com/Oqg6kzN.png');
+    background-size: cover;
+    animation: anim 1s steps(29) infinite;
   }
+
+  .animation-accueil .haut-accueil{
+    background-image: url('https://imgur.com/LBkGFMh.png');
+  }
+
+  .animation-accueil .bas-accueil{
+    background-image: url('https://imgur.com/rya02Vf.png');
+  }
+
+  @keyframes anim{
+    0%{background-position: 0 0;}
+    100%{background-position: 0 100%;}
+  }
+
   iframe{
     position: absolute;
     top:0;

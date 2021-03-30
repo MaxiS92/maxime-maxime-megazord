@@ -59,3 +59,31 @@ const sectionList = document.querySelectorAll(".section-accueil");
     opacity: 0,
   })
 })
+
+let timeout;
+let body = document.body;
+
+gsap.to('.animation-accueil', { 
+  scrollTrigger: {
+    scrub: true,
+    trigger: ".animation-accueil",
+    onUpdate: (e) => {
+      body.classList.add("is-scrolling");
+     
+      clearTimeout(timeout);
+     
+      timeout = setTimeout(() => {
+        body.classList.remove("is-scrolling")
+      }, 250)
+      
+      if (e.direction == 1) {
+        body.classList.remove("haut");
+        body.classList.add("bas");
+      } 
+      else {
+         body.classList.add("haut");
+        body.classList.remove("bas");
+      }
+    }
+  },
+})
