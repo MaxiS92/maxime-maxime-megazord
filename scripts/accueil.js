@@ -19,7 +19,7 @@ const sectionList = document.querySelectorAll(".section-accueil");
   gsap.timeline({
     scrollTrigger: {
     markers: true,
-    start: 'top 75%',
+    start: 'top 70%',
     end: 'bottom 25%',
     toggleActions: 'play complete play reverse',
     trigger: section,
@@ -28,14 +28,17 @@ const sectionList = document.querySelectorAll(".section-accueil");
 
   .from(title, {
     opacity: 0,
+    duration: 0.5,
     scale: '2',
   })
   .from(swiper, {
     y: '-100px',
+    duration: 0.5,
     opacity: 0,
   })
   .from(video, {
     y: '100px',
+    duration: 0.5,
     opacity: 0,
   })
   .from(card1, {
