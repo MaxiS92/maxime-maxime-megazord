@@ -80,6 +80,7 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
+    overflow: hidden;
   }
 
   .h1-cartes{
@@ -131,7 +132,7 @@ body{
   .animation-accueil{
     width: 100%;
     position: sticky;
-    top: 50%;
+    top: 25%;
     height: 0;
     padding-bottom: 100%;
     background-image: url('https://imgur.com/Oqg6kzN.png');
@@ -139,12 +140,26 @@ body{
     animation: anim 1s steps(29) infinite;
   }
 
-  .animation-accueil .haut-accueil{
+  .haut-accueil.is-scrolling .animation-accueil{
+    width: 100%;
+    position: sticky;
+    top: 25%;
+    height: 0;
+    padding-bottom: 100%;
     background-image: url('https://imgur.com/LBkGFMh.png');
+    background-size: cover;
+    animation: anim 1s steps(29) infinite;
   }
 
-  .animation-accueil .bas-accueil{
+  .bas-accueil.is-scrolling .animation-accueil{
+    width: 100%;
+    position: sticky;
+    top: 25%;
+    height: 0;
+    padding-bottom: 100%;
     background-image: url('https://imgur.com/rya02Vf.png');
+    background-size: cover;
+    animation: anim 1s steps(30) infinite;
   }
 
   @keyframes anim{

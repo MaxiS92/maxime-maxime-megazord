@@ -18,10 +18,10 @@ const sectionList = document.querySelectorAll(".section-accueil");
                     
   gsap.timeline({
     scrollTrigger: {
-    markers: false,
+    markers: true,
     start: 'top 75%',
     end: 'bottom 25%',
-    toggleActions: 'restart complete reverse reset',
+    toggleActions: 'play complete play reverse',
     trigger: section,
     },
   })
@@ -40,22 +40,22 @@ const sectionList = document.querySelectorAll(".section-accueil");
   })
   .from(card1, {
     y: '100px',
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
   })
   .from(card2, {
     y: '100px',
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
   })
   .from(card3, {
     y: '100px',
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
   })
   .from(card4, {
     y: '100px',
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
   })
 })
@@ -66,7 +66,7 @@ let body = document.body;
 gsap.to('.animation-accueil', { 
   scrollTrigger: {
     scrub: true,
-    trigger: ".animation-accueil",
+    trigger: ".barre-laterale-accueil",
     onUpdate: (e) => {
       body.classList.add("is-scrolling");
      
@@ -77,12 +77,12 @@ gsap.to('.animation-accueil', {
       }, 250)
       
       if (e.direction == 1) {
-        body.classList.remove("haut");
-        body.classList.add("bas");
+        body.classList.remove("haut-accueil");
+        body.classList.add("bas-accueil");
       } 
       else {
-         body.classList.add("haut");
-        body.classList.remove("bas");
+         body.classList.add("haut-accueil");
+        body.classList.remove("bas-accueil");
       }
     }
   },
