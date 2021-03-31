@@ -18,7 +18,7 @@ const sectionList = document.querySelectorAll(".section-accueil");
                     
   gsap.timeline({
     scrollTrigger: {
-    markers: true,
+    markers: false,
     start: 'top 70%',
     end: 'bottom 25%',
     toggleActions: 'play complete play reverse',
