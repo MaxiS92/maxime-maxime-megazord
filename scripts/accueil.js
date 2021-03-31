@@ -21,7 +21,7 @@ const sectionList = document.querySelectorAll(".section-accueil");
     markers: false,
     start: 'top 70%',
     end: 'bottom 25%',
-    toggleActions: 'play stop play reverse',
+    toggleActions: 'play compplete play reverse',
     trigger: section,
     },
   })
