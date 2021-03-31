@@ -19,43 +19,46 @@ const sectionList = document.querySelectorAll(".section-accueil");
   gsap.timeline({
     scrollTrigger: {
     markers: false,
-    start: 'top 75%',
+    start: 'top 70%',
     end: 'bottom 25%',
-    toggleActions: 'restart complete reverse reset',
+    toggleActions: 'play stop play reverse',
     trigger: section,
     },
   })
 
   .from(title, {
     opacity: 0,
+    duration: 0.5,
     scale: '2',
   })
   .from(swiper, {
     y: '-100px',
+    duration: 0.5,
     opacity: 0,
   })
   .from(video, {
     y: '100px',
+    duration: 0.5,
     opacity: 0,
   })
   .from(card1, {
     y: '100px',
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
   })
   .from(card2, {
     y: '100px',
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
   })
   .from(card3, {
     y: '100px',
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
   })
   .from(card4, {
     y: '100px',
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
   })
 })
