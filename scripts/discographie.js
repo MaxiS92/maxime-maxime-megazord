@@ -72,30 +72,3 @@ gsap.to('.animation-accueil', {
   },
 })
 
-let timeout;
-let body = document.body;
-
-gsap.to('.animation-accueil', { 
-  scrollTrigger: {
-    scrub: true,
-    trigger: ".barre-laterale-accueil",
-    onUpdate: (e) => {
-      body.classList.add("is-scrolling");
-     
-      clearTimeout(timeout);
-     
-      timeout = setTimeout(() => {
-        body.classList.remove("is-scrolling")
-      }, 250)
-      
-      if (e.direction == 1) {
-        body.classList.remove("haut-accueil");
-        body.classList.add("bas-accueil");
-      } 
-      else {
-         body.classList.add("haut-accueil");
-        body.classList.remove("bas-accueil");
-      }
-    }
-  },
-})
