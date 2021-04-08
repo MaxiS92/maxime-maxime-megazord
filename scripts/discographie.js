@@ -47,30 +47,55 @@ const sectionList = document.querySelectorAll(".ScrollTrigger, .disco-section");
 let timeout;
 let body = document.body;
 
-gsap.to('.grossecaisse', {
+gsap.to('.animation-accueil', { 
   scrollTrigger: {
-    start: 'top 50%' ,
-    end: 'bottom 50%' ,
     scrub: true,
-    trigger: '.grossecaisse',
-    pin: true,
-
+    trigger: ".barre-laterale-accueil",
     onUpdate: (e) => {
-      body.classList.add('scrollup');
+      body.classList.add("is-scrolling");
+     
       clearTimeout(timeout);
+     
       timeout = setTimeout(() => {
-        body.classList.remove('scrollup');
-        body.classList.remove('scrolldown');
-      }, 0)
-
-      if(e.direction == 1) {
-        body.classList.add('scrolldown');
-        body.classList.remove('scrollup');
+        body.classList.remove("is-scrolling")
+      }, 250)
+      
+      if (e.direction == 1) {
+        body.classList.remove("haut-accueil");
+        body.classList.add("bas-accueil");
       } 
-      if(e.direction == -1) {
-        body.classList.add('scrollup');
-        body.classList.remove('scrolldown');
+      else {
+         body.classList.add("haut-accueil");
+        body.classList.remove("bas-accueil");
       }
     }
-  }
+  },
+})
+
+let timeout;
+let body = document.body;
+
+gsap.to('.animation-accueil', { 
+  scrollTrigger: {
+    scrub: true,
+    trigger: ".barre-laterale-accueil",
+    onUpdate: (e) => {
+      body.classList.add("is-scrolling");
+     
+      clearTimeout(timeout);
+     
+      timeout = setTimeout(() => {
+        body.classList.remove("is-scrolling")
+      }, 250)
+      
+      if (e.direction == 1) {
+        body.classList.remove("haut-accueil");
+        body.classList.add("bas-accueil");
+      } 
+      else {
+         body.classList.add("haut-accueil");
+        body.classList.remove("bas-accueil");
+      }
+    }
+  },
 })

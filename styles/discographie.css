@@ -131,18 +131,7 @@ z-index: 2;
   transition-duration: 0.4s;
 }
 
-.animation-disco{
-  position: relative;
-  width: 400px;
- height: 400px;
- padding: 40px;
-}
-.animation-disco2{
-  position: relative;
-  width: 400px;
- height: 400px;
- padding: 40px;
-}
+
 
 iframe{
   top:0;
@@ -167,47 +156,92 @@ position: relative;
     z-index: 1;
 
 }
+.animation-group{
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  
+}
 
 .animation-disco{
-  position: sticky;
-  top: 50%;
   width: 100%;
   height: 0;
   padding-bottom: 100%;
   background-image: url('https://i.imgur.com/wKIHyqC.png');
   background-size: cover;
-  animation: idle 1s steps(23) infinite;
+  animation: idle1 1s steps(23) infinite;
 }
-.animation-disco .scrollup  {
-    background-image: url('https://i.imgur.com/WrFrjtx.png');
+.haut-accueil.is-scrolling .animation-disco{
+  width: 100%;
+ 
+ 
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url('https://i.imgur.com/WrFrjtx.png');
+  background-size: cover;
+  animation: idle1 1s steps(23) infinite;
 }
-.animation-disco .scrolldown {
-    background-image: url('https://i.imgur.com/ITDqXbx.png');
+
+.bas-accueil.is-scrolling .animation-disco{
+  width: 100%;
+  
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url('https://i.imgur.com/ITDqXbx.png');
+  background-size: cover;
+  animation: idle1 1s steps(23) infinite;
 }
-@keyframes idle{
+@keyframes idle1{
     0%{background-position: 0 0;}
     100%{background-position: 0 100%;}
   }
-  .animation-disco2{
-    position: sticky;
-    top: 50%;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    background-image: url('https://i.imgur.com/VwQkGGL.png');
-    background-size: cover;
-    animation: idle2 1s steps(23) infinite;
-  }
-  .animation-disco2 .scrollup  {
-      background-image: url('https://i.imgur.com/oHC5Rwb.png');
-  }
-  .animation-disco2 .scrolldown {
-      background-image: url('https://i.imgur.com/LBbOypF.png');
-  }
-  @keyframes idle2{
-    0%{background-position: 100% 100%;}
-    100%{background-position: 0 0;}
+
+
+
+
+
+  
+   
+
+
+
+    .animation-disco2{
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      background-image: url('https://i.imgur.com/VwQkGGL.png');
+      background-size: cover;
+      animation: idle2 1s steps(23) infinite;
     }
+    .haut-accueil.is-scrolling .animation-disco2{
+      width: 100%;
+     
+     
+      height: 0;
+      padding-bottom: 100%;
+      background-image: url('https://i.imgur.com/oHC5Rwb.png');
+      background-size: cover;
+      animation: idle2 1s steps(23) infinite;
+    }
+    
+    .bas-accueil.is-scrolling .animation-disco2{
+      width: 100%;
+      
+      height: 0;
+      padding-bottom: 100%;
+      background-image: url('https://i.imgur.com/LBbOypF.png');
+      background-size: cover;
+      animation: idle2 1s steps(23) infinite;
+    }
+    @keyframes idle2{
+      0%{background-position: 100% 100%;}
+      100%{background-position: 0 0;}
+      }
+    
+   
+  
+   
+    
   
 
   
