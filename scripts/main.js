@@ -60,6 +60,7 @@ let questions = [
   ];
   
   var bodyquiz = document.querySelector(".body-quiz");
+  var bonnerep = document.querySelector(".bouton-pos");
 
   console.log("Bonne réponse: pointage " + this.score);
   
@@ -185,6 +186,13 @@ let questions = [
       let global = document.createElement('div');
       global.innerText = 'Félicitation';
       bodyquiz.appendChild(global);
+    }
+    goodAnswer(){
+        this.div = document.createElement("div");
+        boutonpos.appendChild(this.div);
+    }
+    wrongAnswer(){
+        
     }
   }
   
