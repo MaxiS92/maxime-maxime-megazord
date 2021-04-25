@@ -59,187 +59,231 @@ let questions = [
     }
   ];
   
-  var bodyquiz = document.querySelector(".body-quiz");
-  var bonnerep = document.querySelector(".bouton-pos");
-
-  console.log("Bonne réponse: pointage " + this.score);
+  var quizBody = document.querySelector(".body-quiz");
+  var bonQuiz = document.querySelector(".quiz-bon");
+  var mauvaisQuiz = document.querySelector(".quiz-mauvais");
   
-  class Quiz {
-    constructor(tableau) {
+  
+  
+  class Question {
+  
+    constructor(table) {
       this.index = 0;
       this.score = 0;
-      this.questions = tableau;
-      this.questions.forEach((question, value) => {
-        this.creerHtml(question, value + 1);
+      this.question = table;
+      this.question.forEach((question, value) => {
+        this.html(question, value + 1);
       });
+  
       this.setVisible(this.index);
-      this.answers();
+      this.reponse();
     }
-    creerHtml(Q, value) {
-      //div
+    html(A, value) {
+  
       this.div = document.createElement("div");
       this.div.classList.add("question");
-      bodyquiz.appendChild(this.div);
+      quizBody.appendChild(this.div);
   
-      //strong
       this.strong = document.createElement("strong");
-      this.strong.innerText = Q.q;
+      this.strong.innerText = A.q;
       this.div.appendChild(this.strong);
   
-      //br
       this.br = document.createElement("br");
       this.div.appendChild(this.br);
   
-      //options
-      if ("o1" in Q) {
-        let radio = document.createElement("input");
-        radio.setAttribute("type", "radio");
-        radio.setAttribute("name", "question" + value);
-        radio.setAttribute("value", "1");
-        this.div.appendChild(radio);
+      if ("o1" in A) {
   
-        let label = document.createElement("label");
-        label.innerText = Q.o1;
-        this.div.appendChild(label);
+        let radio1 = document.createElement("input");
+        radio1.setAttribute("type", "radio");
+        radio1.setAttribute("name", "question" + value);
+        radio1.setAttribute("value", "1");
+        this.div.appendChild(radio1);
   
-        this.br = document.createElement("br");
-        this.div.appendChild(this.br);
-      }
-  
-      if ("o2" in Q) {
-        let radio = document.createElement("input");
-        radio.setAttribute("type", "radio");
-        radio.setAttribute("name", "question" + value);
-        radio.setAttribute("value", "2");
-        this.div.appendChild(radio);
-  
-        let label = document.createElement("label");
-        label.innerText = Q.o2;
-        this.div.appendChild(label);
+        let label1 = document.createElement("label");
+        label1.innerText = A.o1;
+        this.div.appendChild(label1);
   
         this.br = document.createElement("br");
         this.div.appendChild(this.br);
       }
   
-      if ("o3" in Q) {
-        let radio = document.createElement("input");
-        radio.setAttribute("type", "radio");
-        radio.setAttribute("name", "question" + value);
-        radio.setAttribute("value", "3");
-        this.div.appendChild(radio);
+      if ("o2" in A) {
   
-        let label = document.createElement("label");
-        label.innerText = Q.o3;
-        this.div.appendChild(label);
+        let radio2 = document.createElement("input");
+        radio2.setAttribute("type", "radio");
+        radio2.setAttribute("name", "question" + value);
+        radio2.setAttribute("value", "2");
+        this.div.appendChild(radio2);
+  
+        let label2 = document.createElement("label");
+        label2.innerText = A.o2;
+        this.div.appendChild(label2);
+  
+        this.br = document.createElement("br");
+        this.div.appendChild(this.br);
+      }
+  
+      if ("o3" in A) {
+  
+        let radio3 = document.createElement("input");
+        radio3.setAttribute("type", "radio");
+        radio3.setAttribute("name", "question" + value);
+        radio3.setAttribute("value", "3");
+        this.div.appendChild(radio3);
+  
+        let label3 = document.createElement("label");
+        label3.innerText = A.o3;
+        this.div.appendChild(label3);
   
         this.br = document.createElement("br");
         this.div.appendChild(this.br);
       }
   
-      if ("o4" in Q) {
-        let radio = document.createElement("input");
-        radio.setAttribute("type", "radio");
-        radio.setAttribute("name", "question" + value);
-        radio.setAttribute("value", "4");
-        this.div.appendChild(radio);
-  
-        let label = document.createElement("label");
-        label.innerText = Q.o4;
-        this.div.appendChild(label);
-  
-        this.br = document.createElement("br");
-        this.div.appendChild(this.br);
-      }
     }
-    setVisible(number) {
-      let divQ = document.querySelectorAll(".question");
-      divQ.forEach((q) => {
+  
+    setVisible(nombre) {
+  
+      let divA = document.querySelectorAll(".question");
+      divA.forEach((q) => {
         q.classList.remove("is-visible");
-        divQ[number].classList.add("is-visible");
+        divA[nombre].classList.add("is-visible");
       });
     }
-    answers() {
-      let R = document.querySelectorAll("input[type = 'radio']");
-      R.forEach((radio) => {
+  
+    reponse() {
+  
+      let r = document.querySelectorAll("input[type = 'radio']");
+      r.forEach((radio) => {
+  
         radio.addEventListener("change", () => {
+          console.log(this.index);
           if (radio.checked) {
-            if (radio.value == this.questions[this.index].r) {
-              this.score++;
-              console.log("Bonne réponse: pointage " + this.score);
+            if (radio.value == this.question[this.index].r) {
+              this.bonneReponse();
             } else {
-              this.score--;
-              if(this.score == -1) { this.score = 0 }
-              console.log("Mauvaise réponse: pointage " + this.score);
+              this.mauvaiseReponse();
+              if (this.score == -1) { this.score = 0 }
             }
-            if (this.index < this.questions.length) {
-              this.index++;
-              if(this.index == this.questions.length) {
-                this.final();
+            if (this.index <= this.question.length - 1) {
+              if(this.index == this.question.length - 1) {
+                this.div.classList.add("last");
+                this.div.innerText = 'Pointage:';
+                this.strong.innerText = this.score + '/' + this.question.length;
+                this.div.appendChild(this.br);
+                this.div.appendChild(this.strong);
+                this.quizTerminer()
+                bonQuiz.remove();
+                mauvaisQuiz.remove();
               }
+              this.index++;
               this.setVisible(this.index);
+            }
+            else {
+              this.quizTerminer()
+              bonQuiz.remove();
+              mauvaisQuiz.remove();
             }
           }
         });
       });
     }
-    final() {
-      let global = document.createElement('div');
-      global.innerText = 'Félicitation';
-      bodyquiz.appendChild(global);
-    }
-    goodAnswer(){
-        this.div = document.createElement("div");
-        boutonpos.appendChild(this.div);
-    }
-    wrongAnswer(){
-        
-    }
-  }
   
-  new Quiz(questions);
+    bonneReponse() {
+      gsap.to('.fond1', { 
+        duration: 1.2,
+        scale: 1,
+        opacity: 1,
+        rotationZ: 360,
+        ease: "easing",
+      });
+        gsap.to('.fond1', { 
+        delay: 3,
+        scale: 0,
+        opacity: 0,
+        rotationZ: -360
+      });
+      gsap.to('.face1', { 
+        duration: 1.2,
+        scale: 1,
+        opacity: 1,
+        rotationZ: -360,
+        ease: "bounce",
+        delay: 0.5
+      });
+          gsap.to('.face1', { 
+        delay: 3,
+        scale: 0,
+        opacity: 0,
+        rotationZ: 360
+      });
+        gsap.to('.texte1', { 
+        duration: 1.2,
+        scale: 0.7,
+        opacity: 1,
+        ease: "elastic",
+        delay: 1.2,
+      });
+        gsap.to('.texte1', { 
+        delay: 3,
+        scale: 0,
+        opacity: 0,
+        onComplete: () => console.log("fini")
+      });
+        
+        this.score++;
+      
+  }
+
+  
+    mauvaiseReponse() {
+      gsap.to('.fond', { 
+        duration: 1.2,
+        scale: 1,
+        opacity: 1,
+        rotationZ: 360,
+        ease: "easing",
+      });
+        gsap.to('.fond', { 
+        delay: 3,
+        scale: 0,
+        opacity: 0,
+        rotationZ: -360
+      });
+      gsap.to('.face', { 
+        duration: 1.2,
+        scale: 1,
+        opacity: 1,
+        rotationZ: -360,
+        ease: "bounce",
+        delay: 0.5
+      });
+          gsap.to('.face', { 
+        delay: 3,
+        scale: 0,
+        opacity: 0,
+        rotationZ: 360
+      });
+        gsap.to('.texte', { 
+        duration: 1.2,
+        scale: 0.7,
+        opacity: 1,
+        ease: "elastic",
+        delay: 1.2,
+      });
+        gsap.to('.texte', { 
+        delay: 3,
+        scale: 0,
+        opacity: 0,
+        onComplete: () => console.log("fini")
+      });
+  
+    }
+    
+    }
+  
+  
+  new Question(questions);
 
   
   var play = document.querySelector('.btn');
 
-play.addEventListener('click', () => {
-  gsap.to('.fond', { 
-    duration: 1.2,
-    scale: 1,
-    opacity: 1,
-    rotationZ: 360,
-    ease: "easing",
-  });
-    gsap.to('.fond', { 
-    delay: 3,
-    scale: 0,
-    opacity: 0,
-    rotationZ: -360
-  });
-  gsap.to('.face', { 
-    duration: 1.2,
-    scale: 1,
-    opacity: 1,
-    rotationZ: -360,
-    ease: "bounce",
-    delay: 0.5
-  });
-      gsap.to('.face', { 
-    delay: 3,
-    scale: 0,
-    opacity: 0,
-    rotationZ: 360
-  });
-    gsap.to('.texte', { 
-    duration: 1.2,
-    scale: 0.7,
-    opacity: 1,
-    ease: "elastic",
-    delay: 1.2,
-  });
-    gsap.to('.texte', { 
-    delay: 3,
-    scale: 0,
-    opacity: 0,
-    onComplete: () => console.log("fini")
-  });
-  });

@@ -114,6 +114,37 @@ footer{
   position:absolute;
   z-index:10;
 }
+.fond1{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+  
+}
+
+.face1{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+}
+
+.texte1{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    translateY(30%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+}
 
 .question {
   display: none;
