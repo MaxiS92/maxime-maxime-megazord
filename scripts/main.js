@@ -14,7 +14,6 @@ fetch('https://megazord-vanhalen.ca/json/')
   var mauvaisQuiz = document.querySelector(".quiz-mauvais");
   
   
-  
   class Question {
   
     constructor(table) {
