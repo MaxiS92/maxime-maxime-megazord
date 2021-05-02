@@ -1,4 +1,4 @@
-fetch('megazord-vanhalen.ca/json/')
+fetch('https://megazord-vanhalen.ca/json/')
 .then(function(response) {
   return response.json();
 })
