@@ -232,7 +232,7 @@ fetch('http://megazord-vanhalen.ca/json/')
     }
   
   
-  new Question(questions);
+  
 
   
   var play = document.querySelector('.btn');
