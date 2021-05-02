@@ -13,4 +13,4 @@ Maxime Sabourin: https://codepen.io/MaxiS9/pen/xxgRqKm
 </li>
 
 <h1>Lien</h1>
-<span>http://megazord-vanhalen.ca/</span>
+<span>https://megazord-vanhalen.ca/vanhalen/</span>
