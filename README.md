@@ -11,3 +11,6 @@ Bleu: Maxime De Falco
 <li>
 Maxime Sabourin: https://codepen.io/MaxiS9/pen/xxgRqKm
 </li>
+
+<h1>Lien</h1>
+<span>http://megazord-vanhalen.ca/</span>
