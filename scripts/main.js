@@ -1,4 +1,4 @@
-fetch('https://megazord-vanhalen.ca/json/')
+fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts')
 .then(function(response) {
   return response.json();
 })
