@@ -40,7 +40,7 @@ fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts
       this.br = document.createElement("br");
       this.div.appendChild(this.br);
   
-      if ("o1" in A) {
+      if ("o1" in A.acf) {
   
         let radio1 = document.createElement("input");
         radio1.setAttribute("type", "radio");
@@ -56,7 +56,7 @@ fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts
         this.div.appendChild(this.br);
       }
   
-      if ("o2" in A) {
+      if ("o2" in A.acf) {
   
         let radio2 = document.createElement("input");
         radio2.setAttribute("type", "radio");
@@ -72,7 +72,7 @@ fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts
         this.div.appendChild(this.br);
       }
   
-      if ("o3" in A) {
+      if ("o3" in A.acf) {
   
         let radio3 = document.createElement("input");
         radio3.setAttribute("type", "radio");
