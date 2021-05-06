@@ -34,7 +34,7 @@ fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts
       quizBody.appendChild(this.div);
   
       this.strong = document.createElement("strong");
-      this.strong.innerText = A.q;
+      this.strong.innerText = A.acf.q;
       this.div.appendChild(this.strong);
   
       this.br = document.createElement("br");
@@ -49,7 +49,7 @@ fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts
         this.div.appendChild(radio1);
   
         let label1 = document.createElement("label");
-        label1.innerText = A.o1;
+        label1.innerText = A.acf.o1;
         this.div.appendChild(label1);
   
         this.br = document.createElement("br");
@@ -65,7 +65,7 @@ fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts
         this.div.appendChild(radio2);
   
         let label2 = document.createElement("label");
-        label2.innerText = A.o2;
+        label2.innerText = A.acf.o2;
         this.div.appendChild(label2);
   
         this.br = document.createElement("br");
@@ -81,7 +81,7 @@ fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts
         this.div.appendChild(radio3);
   
         let label3 = document.createElement("label");
-        label3.innerText = A.o3;
+        label3.innerText = A.acf.o3;
         this.div.appendChild(label3);
   
         this.br = document.createElement("br");
@@ -107,7 +107,7 @@ fetch('https://megazord-vanhalen.ca/public_html/vanhalen-api/wp-json/wp/v2/posts
         radio.addEventListener("change", () => {
           console.log(this.index);
           if (radio.checked) {
-            if (radio.value == this.question[this.index].r) {
+            if (radio.value == this.question[this.index].acf.r) {
               this.bonneReponse();
             } else {
               this.mauvaiseReponse();
