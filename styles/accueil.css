@@ -43,7 +43,7 @@ body{
     width: 100%;
     height: 100%; 
     text-align: center; 
-    font-family: "ZeF RAVE";
+    font-family: 'Heebo', sans-serif;
     font-size: 6vw;
     color: #c90000;
 }
@@ -65,7 +65,7 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: 2.2vw;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Heebo', sans-serif;
     transform: translateX(-50%);
     left: 50%;
    
@@ -85,7 +85,7 @@ body{
 
   .h1-cartes{
     position: relative;
-    font-family: "ZeF RAVE";
+    font-family: 'Heebo', sans-serif;
     font-size: 5vw;
     color: #c90000;
   }
@@ -99,7 +99,7 @@ body{
       width:100%;
   }
   .card-title{
-    font-family: "ZeF RAVE";
+    font-family: 'Heebo', sans-serif;
     font-size: 5vw;
     color: #c90000;
   }

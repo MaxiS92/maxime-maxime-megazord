@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
 
 @import 'variables.css';
 @import 'accueil.css';
 @import 'discographie.css';
-
-@font-face {
-  font-family: "ZeF RAVE";
-  src: url('ZeF RAVE.otf');
-}
 
 h1{
   font-size: 6vw; 
@@ -37,7 +33,7 @@ footer{
   width: 100%;
 }
 .navbar-brand{
-  font-family: "ZeF RAVE";
+  font-family: 'Heebo', sans-serif;
   font-size: 30px;
 }
 .nav-item{
@@ -52,7 +48,7 @@ footer{
   cursor: pointer;
 }
 .modal-title{
-  font-family: "ZeF RAVE";
+  font-family: 'Heebo', sans-serif;
   font-size: 40px;
   color: #c90000;
 }
@@ -67,7 +63,7 @@ footer{
   position: absolute;
   bottom: 40%;
   left: 50%;
-  font-family: "ZeF RAVE";
+  font-family: 'Heebo', sans-serif;
   background-color: #c90000;
   padding: 1%;
   font-size: 40px;
