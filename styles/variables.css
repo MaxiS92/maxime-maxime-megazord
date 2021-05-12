@@ -3,9 +3,9 @@
     --text: #ffffff;
     --primary: #c90000;
     --primary-alt: #c24f4f;
-    --secondary: #00047d;
-    --secondary-alt: #42459e;
+    --secondary: #740000;
+    --secondary-alt: rgb(100, 100, 100);
 
-    --title: 'ZeF RAVE';
+    --title: 'Heebo', sans-serif;
     --regular: 'Oswald', sans-serif;
 }

@@ -6,40 +6,43 @@
     background-color: black;
 }
 .disco-header{
-    
+    position: relative;
+    width: 100%;
+    height: 100vh;
     object-fit: cover;
 }
-.disco-picture {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-.container{
-position: absolute;
-height: 100%;
 
+
+.container-disco{
+position: relative;
+height: 100%;
+padding-bottom: 30px;
+z-index: 3;
 }
+
 .row{
-position: absolute;
+position: relative;
 height: 100%;
 }
+
 .disco-contraste{
+  position: absolute;
 width: 100%;
 height: 100%;
-position: absolute;
-background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) ); 
 
+background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) ); 
+z-index: 2;
 }
+
 .disco-h1{
     position: relative;
     width: 100%;
     height: 100%; 
     text-align: left; 
-    font-family: "ZeF RAVE";
+    font-family: 'Heebo', sans-serif;
     font-size: 6vw;
     color: #c90000;
 }
-
 
 .disco-p{
     position: relative;
@@ -72,3 +75,175 @@ background-image: linear-gradient(transparent, rgba(102, 97, 97, 0.575) );
     font-family: 'Oswald', sans-serif;
     transition-duration: 0.4s;
   }
+  .disco-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+  }
+
+  ol{    
+      position: relative;
+      font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: #c90000;  
+  }
+
+  li{
+ position: relative;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2.5vw;
+   margin-left:20px ;
+  }
+
+  a { color: inherit; 
+} 
+  
+ 
+.photo { 
+    width: 100%;
+    margin-top: 20px;
+
+
+} 
+.disco-button2{
+
+  position: relative;
+  background-color: #c90000;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 2.2vw;
+  font-family: 'Oswald', sans-serif;
+  border: none;
+  text-decoration: none;
+  margin-left:20px ;
+}
+
+.disco-button2:hover{
+  position: relative;
+  background-color: #c24f4f;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 2.1vw;
+  font-family: 'Oswald', sans-serif;
+  transition-duration: 0.4s;
+}
+
+
+
+iframe{
+  top:0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video{
+position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+   }
+
+   .swipercontainer-disco{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    padding: 50px;
+    z-index: 1;
+
+}
+.animation-group{
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  
+}
+
+.animation-disco{
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url('https://i.imgur.com/wKIHyqC.png');
+  background-size: cover;
+  animation: idle1 1s steps(23) infinite;
+}
+.haut-accueil.is-scrolling .animation-disco{
+  width: 100%;
+ 
+ 
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url('https://i.imgur.com/WrFrjtx.png');
+  background-size: cover;
+  animation: idle1 1s steps(23) infinite;
+}
+
+.bas-accueil.is-scrolling .animation-disco{
+  width: 100%;
+  
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url('https://i.imgur.com/ITDqXbx.png');
+  background-size: cover;
+  animation: idle1 1s steps(23) infinite;
+}
+@keyframes idle1{
+    0%{background-position: 0 0;}
+    100%{background-position: 0 100%;}
+  }
+
+
+
+
+
+  
+   
+
+
+
+    .animation-disco2{
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      background-image: url('https://i.imgur.com/VwQkGGL.png');
+      background-size: cover;
+      animation: idle2 1s steps(23) infinite;
+    }
+    .haut-accueil.is-scrolling .animation-disco2{
+      width: 100%;
+     
+     
+      height: 0;
+      padding-bottom: 100%;
+      background-image: url('https://i.imgur.com/oHC5Rwb.png');
+      background-size: cover;
+      animation: idle2 1s steps(23) infinite;
+    }
+    
+    .bas-accueil.is-scrolling .animation-disco2{
+      width: 100%;
+      
+      height: 0;
+      padding-bottom: 100%;
+      background-image: url('https://i.imgur.com/LBbOypF.png');
+      background-size: cover;
+      animation: idle2 1s steps(23) infinite;
+    }
+    @keyframes idle2{
+      0%{background-position: 100% 100%;}
+      100%{background-position: 0 0;}
+      }
+    
+   
+  
+   
+    
+  
+
+  
+
+

@@ -1,24 +1,35 @@
 
+body{
+  background-color: black;
+  position: relative;
+  height: 100%;
+}
 .imgA {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.headerA {
-    object-fit: cover;
-}
+@media screen and (orientation: landscape) {
+  .headerA{
+      position: relative;
+      margin: 0 auto;
+      width:100%;
+      height: 56.25vw;
+  }
+} 
 .pictureA {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.container-fluid {
-    position: absolute;
+.container-title {
+    position: relative;
     height: 100%;
 }
-.row {
-    height: 100%;
+.headerA{
+    position: relative;
     width: 100%;
+    height: 100vh;
 }
 .contrasteA {
     position: absolute;
@@ -32,7 +43,7 @@
     width: 100%;
     height: 100%; 
     text-align: center; 
-    font-family: "ZeF RAVE";
+    font-family: 'Heebo', sans-serif;
     font-size: 6vw;
     color: #c90000;
 }
@@ -54,7 +65,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 2.2vw;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Heebo', sans-serif;
     transform: translateX(-50%);
     left: 50%;
    
@@ -63,4 +74,129 @@
     background-color: #c24f4f;
     font-size: 2.1vw;
     transition-duration: 0.4s;
+  }
+
+  .section-accueil{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .h1-cartes{
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: #c90000;
+  }
+
+  .card{
+    position: relative;
+    margin-top: 10px;
+    border: none;
+  }
+  .card-img-top{
+      width:100%;
+  }
+  .card-title{
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: #c90000;
+  }
+  .role{
+    font-family: 'Oswald', sans-serif, bold;
+    font-size: 3vw;
+    color: black;
+  }
+  .card-body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2vw;
+    color: black;
+  }
+  .button-cartes{
+    position: relative;
+    width: 100%;
+    background-color: #c90000;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 2.2vw;
+    font-family: 'Oswald', sans-serif;
+  }
+  .button-cartes:hover{
+    background-color: #c24f4f;
+    font-size: 2.1vw;
+    transition-duration: 0.4s;
+  }
+  .animation-accueil{
+    width: 100%;
+    position: sticky;
+    top: 25%;
+    height: 0;
+    padding-bottom: 100%;
+    background-image: url('https://imgur.com/Oqg6kzN.png');
+    background-size: cover;
+    animation: anim 1s steps(29) infinite;
+  }
+
+  .haut-accueil.is-scrolling .animation-accueil{
+    width: 100%;
+    position: sticky;
+    top: 25%;
+    height: 0;
+    padding-bottom: 100%;
+    background-image: url('https://imgur.com/LBkGFMh.png');
+    background-size: cover;
+    animation: anim 1s steps(29) infinite;
+  }
+
+  .bas-accueil.is-scrolling .animation-accueil{
+    width: 100%;
+    position: sticky;
+    top: 25%;
+    height: 0;
+    padding-bottom: 100%;
+    background-image: url('https://imgur.com/rya02Vf.png');
+    background-size: cover;
+    animation: anim 1s steps(30) infinite;
+  }
+
+  @keyframes anim{
+    0%{background-position: 0 0;}
+    100%{background-position: 0 100%;}
+  }
+
+  iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .rwd-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    text-align: center;
+    object-fit: fill;
+  }
+  .carousel-accueil-img{
+    width: 100%;
+    position: relative;
+    object-fit: fill;
+  }
+  .swiper-slide {
+    text-align: center;
+  }
+  .swiper-pagination-bullet{
+    width: 2%;
+    opacity: 0.4;
+    background-color: rgb(172, 172, 172);
+  }
+  .swiper-pagination-bullet-active{
+    width: 2%;
+    opacity: 1;
+    background-color: #c90000;
   }

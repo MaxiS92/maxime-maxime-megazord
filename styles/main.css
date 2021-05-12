@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
 
 @import 'variables.css';
 @import 'accueil.css';
 @import 'discographie.css';
-
-@font-face {
-  font-family: "ZeF RAVE";
-  src: url('ZeF RAVE.otf');
-}
 
 h1{
   font-size: 6vw; 
@@ -21,3 +17,139 @@ h3{
 p{
   font-size: 2.2vw;
 }
+
+footer{
+  background-color: #740000;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar{
+  background-color: #740000;
+  width: 100%;
+}
+.navbar-brand{
+  font-family: 'Heebo', sans-serif;
+  font-size: 30px;
+}
+.nav-item{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+.active{
+  color: white;
+}
+.maxime-hover:hover{
+  color:#ffc5c5;
+  cursor: pointer;
+}
+.modal-title{
+  font-family: 'Heebo', sans-serif;
+  font-size: 40px;
+  color: #c90000;
+}
+.img-modal{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  font-family: 'Heebo', sans-serif;
+  background-color: #c90000;
+  padding: 1%;
+  font-size: 40px;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  transform: translateX(-50%);
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: translate(-50%, 2px);
+  background-color: #c24f4f;
+}
+
+.fond{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+  
+}
+
+.face{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+}
+
+.texte{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    translateY(30%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+}
+.fond1{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+  
+}
+
+.face1{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+}
+
+.texte1{
+  bottom: 0%;
+  left:50%;
+  transform: translateX(-50%)
+    translateY(30%)
+    scale(0);
+  opacity: 0;
+  position:absolute;
+  z-index:10;
+}
+
+.question {
+  display: none;
+  margin: 20px;
+}
+
+.is-visible {
+  display: block;
+}
+
+
+
