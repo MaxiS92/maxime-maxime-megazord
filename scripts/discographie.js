@@ -27,7 +27,7 @@ const sectionList = document.querySelectorAll(".ScrollTrigger, .disco-section");
 
   .from(video, {
     opacity: 0,
-    scale: '2',
+    y: '100px',
   })
   .from(photo, {
     y: '-100px',
